@@ -1,13 +1,13 @@
 # Portfolio - Marco Gabriel Barreto Souza
 Analytics Portfolio
 
-By clicking on the header you are taken to a public repository with the code.
+You will be taken to a public repository with the code by clicking on the header.
 
 Projects are listed from newest to oldest.
 
 ## [Project 3 - Exams Project](https://github.com/mgbs98/exams-project)
 
-I decided to participate in this DataCamp challenge to demonstrate some of my Python Skills.
+I participated in this DataCamp challenge to demonstrate some of my Python Skills.
 
 The challenge goes as follows:
 
@@ -82,7 +82,7 @@ Create a report to answer the principal's questions. Include:
 
 - Students from specific ethnic groups performed better than others
 
-  - Students from the best-performing group, Group E, had scores that were, on average, 15 % higher than the worse performing group, Group A
+  - Students from the best-performing group, Group E, had scores that were, on average, 15 % higher than the worse-performing group, Group A
 
 ![image](https://github.com/mgbs98/Portfolio---Marco-Gabriel-Barreto-Souza/assets/10834303/adab0ce1-8f65-4080-93a6-49d81365c36a)
 
@@ -128,7 +128,7 @@ Create a report to answer the principal's questions. Include:
 A personal project to create a Monte Carlo Simulation to predict stock prices, based on my studies.
 
 What is the Monte Carlo Simulation?
-A Monte Carlo simulation is used to model the probability of different outcomes in a process that cannot easily be predicted due to the intervention of random variables. It is a technique used to understand the impact of risk and uncertainty.
+A Monte Carlo simulation is used to model the probability of different outcomes in a process that cannot be easily predicted due to the intervention of random variables. It is a technique used to understand the impact of risk and uncertainty.
 
 A Monte Carlo simulation is used to tackle a range of problems in many fields including investing, business, physics, and engineering.
 
