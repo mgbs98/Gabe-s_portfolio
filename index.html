@@ -345,14 +345,158 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 							<div class="fancy-collapse-panel">
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+									
 									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingSix">
+									    <div class="panel-heading" role="tab" id="headingNine">
 									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Project 3 - Exams Project
+									            <a class="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">Project 4 - The Effect of the Sugar-Sweetened Beverage Tax on Non-Alcoholic Beverages in Newfoundland
 									            </a>
 									        </h4>
 									    </div>
-									    <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+									    <div id="collapseNine" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingNine">
+									        <div class="panel-body">
+										    <h1 id="-project-4-did-sugar-https-github-com-mgbs98-did-sugar-project-"><a href="https://github.com/mgbs98/did-sugar-tax/tree/6af3290e0f7f5321bc7a80633b4e6b5d022c6511">The Effect of the Sugar-Sweetened Beverage Tax on Non-Alcoholic Beverages in Newfoundland</a></h1>
+<p><em>The objective of this project is solely to demonstrate how a difference-in-difference model and event study figures can be used to study tax incidence</em></p>
+<h2 id="background">Background</h2>
+<p>On September 1, 2022, <a href="https://healthydebate.ca/2023/03/topic/newfoundland-labrador-sugar-tax/#:~:text=Newfoundland%20and%20Labrador%20became%20the,1%2C%202022.">the Government of <strong><em>Newfoundland and Labrador</em></strong> (NL) introduced a tax on sugary drinks to encourage healthier beverage choices</a>. The provincial Government <a href="https://www.gov.nl.ca/fin/files/21702_sugar_factsheet.pdf">has justified</a> the initiative by stating that it aligns with recommendations from key health organizations like the World Health Organization and Canada&#39;s Food Guide. The Province intends to use th revenue from the tax to support initiatives such as the Physical Activity Tax Credit and school meal programs, promoting better health outcomes for residents.</p>
+<p><strong>The sugar tax of 20 cents per litre</strong> is collected in addition to the provincial sales tax. The sugar tax is therefore levied on the drink&#39;s volume and not on the amount of sugar contained in the beverage. <a href="https://www.gov.nl.ca/fin/files/21702_sugar_factsheet.pdf">The tax on sugary beverages includes ready-to-drink options such as</a>:</p>
+<ul>
+<li>Soft drinks,</li>
+<li>Fruit-flavored drinks,</li>
+<li>Sports and energy drinks</li>
+<li>Dispensed beverages like soda fountain drinks, slush drinks, and fruit juices.</li>
+</ul>
+<p>However, certain beverages are exempt from the tax:</p>
+<ul>
+<li>100% natural fruit or vegetable juices</li>
+<li>Sugar-free sodas</li>
+<li>Chocolate milk</li>
+<li>Alcoholic beverages</li>
+<li>Syrups, purées, and powders used primarily for cooking or food preparation.</li>
+<li>Beverages prepared at the time of purchase in food and beverage establishments, such as sweetened coffee or tea.</li>
+</ul>
+<p><a href="https://www.gov.nl.ca/fin/sugar-sweetened-beverage-tax/">When it comes to concentrated drink mixtures</a>, including frozen concentrated sweetened fruit punches, flavoured drink crystals, powders, and syrups with added sugar, the different rate can be applied. For beverages with clear preparation instructions, the tax applies at a rate of 20 cents per litre. However, for those lacking clear instructions, the tax is higher:</p>
+<ul>
+<li>0.80 CAD per litre for frozen concentrated juices,</li>
+<li>2.00 CAD per kilogram for flavoured powders,</li>
+<li>1.20 CAD per litre for syrups.</li>
+</ul>
+<p>This tax structure is supposed to incentivize manufacturers to provide clear preparation guidelines, thus facilitating informed consumer choices and promoting public health objectives.</p>
+<h2 id="objective">Objective</h2>
+<p>My objective in this project is to analyze and measure the effect of the <strong><em>Sugar-Sweetened Beverage tax</em></strong> on non-alcoholic beverages implemented in the Province of <strong><em>Newfoundland and Labrador</em></strong>, Canada.</p>
+<p>I will use the framework of a <strong><em>Difference-in-Difference</em></strong> (DID) econometric model to achieve that objective. A dynamic and static specification of the model will be considered. The dynamic specification will be used to verify the presence of any pre-trend that violates the assumptions of the model and the long-term effects of the tax. The static specification will be used to verify the magnitude of the effect of the tax, by controlling for covariates that could bias the estimation of the variable of interest.</p>
+<h2 id="methodology">Methodology</h2>
+<p>The <a href="https://www.sciencedirect.com/science/article/abs/pii/S1573446399030047">difference-in-difference</a> (DID) method is commonly used to determine if a particular event caused a change in a specific outcome and to quantify the size of this change. This method is used often for its simplicity and adaptability, making it easy to grasp and apply in various situations (Angrist et al, 1999). It also accounts for changes in the outcome that are not directly caused by the event itself. However, there are limitations to consider. DID requires two sets of observations, one affected by the event and one not, in other words, a treatment and a control group, respectively. Certain assumptions must be met, including the independence of the event from the outcome variable and the stability of characteristics in both sets of observations. The most crucial assumption is that both sets of data follow a similar trend over time, also referred to as the <strong>parallel trends assumption</strong>. Despite these limitations, the DID method was selected for its ability to meet the research objectives effectively. For this project, I use the <a href="https://doi.org/10.25318/1810000401-eng">non-alcoholic beverages</a> subset of the Canadian Consumer Price Index (CPI) as the dependent variable.</p>
+<p><a href="https://github.com/mgbs98/did-sugar-tax/tree/6af3290e0f7f5321bc7a80633b4e6b5d022c6511"><strong><em>For more details about the methodology and the Equations I used you can click here.</em></strong></a></p>
+<h2 id="results">Results</h2>
+<p>We can first verify the validity of the parallel trends assumption by analyzing Figure 1. This figure suggests that non-alcoholic beverage prices are parallel between the provinces. Trends observed in one province can be observed in a similar way in other provinces at the same time. We can also see that there is a jump that happens in non-alcoholic beverage prices exactly when the sugar tax is implemented. It is important to note that, as of April 1, 2021, soda beverages no longer qualify for the Provincial Sales Tax (PST) exemption in British Columbia, resulting in the PST being applied to all retail sales of soda beverages at a rate of 7%. Since the period being considered here only includes the period between September 2021 to November 2023, this change should not interfere with estimations here, since the trends between NL and BC are not affected by this change in the BC legislation in the period considered.</p>
+<p><strong>Figure 1</strong>: Non-Alcoholic Beverage Price by Province.</p>
+<p><img src="./figures_did_sugar_did_sugar/non_alcohol_bev.png" alt="Non-Alcoholic Beverage Price by Province"></p>
+<p>Source: Statistics Canada. <a href="https://doi.org/10.25318/1810000401-eng">Table 18-10-0004-01  Consumer Price Index, monthly, not seasonally adjusted</a></p>
+<p>We can see the results of the dynamic specification graphically by plotting $\tau_k$ from Equation 1. We can see the dynamic treatment effects plotted in Figure 2. We can see that the pre-trends do not present strong evidence of a systematic violation of the parallel trends assumption, as the lead coefficients are mostly not significantly different than zero. On the other hand, we can see that lag coefficients are significantly different than zero. <strong>These results suggest that the implementation of the tax increase the price of non-alcoholic beverages in NL.</strong></p>
+<p><strong>Figure 2</strong>: The Effect of the Sugar Tax on Non-Alcoholic Beverages - Dynamic Specification.</p>
+<p><img src="./figures_did_sugar/diff-in-diff_sugar_tax.png" alt="The Effect of the Sugar Tax on Non-Alcoholic Beverages - Dynamic Specification"></p>
+<p>Source: Author&#39;s Calculations.</p>
+<p>Even though these results are promising and suggest that the tax was the reason for the increase in the dependent variable, the dynamic specification of DID does not provide a reliable measure of the magnitude of the sugar tax effect on the dependent variable. For that, I will consider the static model described in Equation 2. I will also need to control for other variables that could also have an effect on non-alcoholic beverage prices since the exclusion of variables that have an effect on the dependent variable and are correlated with the independent could introduce omitted variable bias in the model, which would make my estimates unreliable.</p>
+<p>To prevent the issue of endogeneity mentioned in the last paragraph I included control variables. The reasoning behind their inclusion can be found in the Appendix section. These were the variables included in the static models:</p>
+<ul>
+<li>Unemployment;</li>
+<li>Average Weekly Earnings;</li>
+<li>Interest Rates;</li>
+<li>WTI Oil Prices;</li>
+<li>CAD/USD Exchange Rate;</li>
+<li>Stringency Index (SI);</li>
+<li>Economic Support Index (ESI);</li>
+<li>Geopolitical Risk Index (GPR).</li>
+</ul>
+<p>The results obtained from the static model can be seen in Table 1. To verify the sensibility of the coefficient of interest on the dependent variable, Table 1 has various columns that consider different combinations of control variables. As we can see in Table 1, the effect of the implementation of the sugar tax increased the price of non-alcoholic beverages by 5.30 CAD in the extended model. We can also observe that the treatment variable is statistically significant in every variation of the model. <strong>Figure 3 shows the results of the static model results with error bars</strong>. These results suggest that the burden of sugar-sweetened beverage tax is being completely passed on to the final consumer.</p>
+<p><strong>Table 1</strong>: Static Model Results - Effect of the Sugar Tax on Non-Alcoholic Beverages.</p>
+<p><img src="./figures_did_sugar/static_model_results_tab.png" alt="Static Model Results - Effect of the Sugar Tax on Non-Alcoholic Beverages"></p>
+<p>Source: Author&#39;s Calculations.</p>
+<p><strong>Figure 3</strong>: Effect of the Sugar Tax on Non-Alcoholic Beverages - Error Bars.</p>
+<p><img src="./figures_did_sugar/static_model_plot.png" alt="Effect of the Sugar-Tax on Non-Alcoholic Beverages - Error Bars"></p>
+<p>Source: Author&#39;s Calculations.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Overall the model I developed in this research suggests that non-alcoholic drinks in Newfoundland and Labrador increased by 5.30 CAD as a result of the implementation of the Sugar-Sweetened Beverage Tax. The extended model, which controls for seven other variables that can also affect the dependent variable, suggests that the tax increased non-alcoholic beverages at a minimum of roughly 3.00 CAD. <strong>These results provide strong evidence that a disproportionately high portion of the tax burden is falling on the final consumer</strong>.</p>
+<p>High tax incidence on consumers is often related to factors such as inelastic demand or market power held by the firms. Inelastic demand implies that consumers are less responsive to price changes, which allows firms to raise prices without experiencing a significant decrease in demand. Additionally, if firms hold market power, they can exert control over prices, which enables them to shift a larger share of the tax burden onto consumers. <strong>Several studies, however, show that the creation of a sugar-sweetened beverage tax decreases demand and that sugary drinks have elastic prices</strong> (<a href="https://doi.org/10.1016/j.ehb.2020.100869">1</a>, <a href="https://doi.org/10.1371/journal.pone.0277306">2</a>, <a href="https://doi.org/10.1186/1471-2458-13-1072">3</a>, <a href="https://doi.org/10.1177/1091142103253753">4</a>, <a href="https://doi.org/10.1007/978-3-319-33648-0_3">5</a>, <a href="https://doi.org/10.1001/jamanetworkopen.2022.15276">6</a> ). There is no consensus on market power being one of the main drivers of beverage inflation, since some reports point to a increase in profit margins in the period, while others point to no evidence of a mark-up increase (<a href="https://centreforfuturework.ca/wp-content/uploads/2022/12/Fifteen-SuperProfitable-Industries.pdf">7</a>, <a href="https://www.ourcommons.ca/Content/Committee/441/AGRI/Reports/RP12503602/agrirp10/agrirp10-e.pdf">8</a>). </p>
+<p>Some explanations can be considered to explain the high-pass-through rate. It can be that the firms are facing higher costs and having difficulties when attempting to provide clear preparation guidelines for their products, thus running into higher tax rates. Another possible reason is that the demand for sugary drinks is relatively more inelastic in Newfoundland and Labrador than in other regions, since <a href="https://www.gov.nl.ca/releases/2021/fin/1019n06/#:~:text=The%20average%20household%20in%20Newfoundland,Canadian%20average%20of%201.4%20percent.">the typical household allocates approximately 2.8 percent of its yearly food and beverage budget to sugar-sweetened beverages</a>. This proportion stands as the highest among Canadian provinces, doubling the national average expenditure of 1.4 percent. This can be a sign that households in the Province have stronger preferences for sugary drinks. That being considered, it is still uncertain why the tax burden is being passed in excess to the final consumer.</p>
+<p>Further studies should be done on the demand for non-alcoholic beverages in Newfoundland. If demand for sugary drinks is found to be inelastic, the Province must consider different policies to achieve the objective of incentivizing healthier beverage choices, since the sugar-sweetened beverage tax would have a limited effect on actual consumption. Studies on the costs associated with the provision of clear preparation guidelines for sugary drink products should also be done, as those could disproportionately impact smaller and local producers. Cost-benefit analysis studies should be performed to assess the net social benefit of this policy in the Province of Newfoundland and Labrador, as these would allow us to better understand if these policies are achieving their intended objectives.</p>
+<p><strong>Summary of Conclusions</strong></p>
+<ol>
+<li>Non-alcoholic beverage prices increased by roughly 5.30 CAD as a result of the sugar-sweetened beverage tax.</li>
+<li>There is strong evidence that the tax burden is disproportionally falling on the final consumer.</li>
+<li>It is still uncertain why the tax burden is being disproportionally passed to the final consumer. </li>
+<li>Most of the literature states that the demand for sugary beverages is elastic.</li>
+<li>If the sugar tax is ineffective in reducing demand for sugar-sweetened drinks, the impact of the policy on social welfare is uncertain.</li>
+<li>Research considering different control variables should be considered.</li>
+</ol>
+<p><strong>My recommendations are the following</strong>:</p>
+<ol>
+<li>Conducting Cost-Benefit Analysis studies on the actual impact of the sugar-sweetened beverage tax on social welfare.</li>
+<li>More studies on the effect of the Newfoundland and Labrador sugar-sweetened beverage tax effect on actual consumption.</li>
+<li>The Government of Newfoundland and Labrador should consider complementary policies to achieve its objective of incentivizing healthier beverage choices.</li>
+<li>Further studies that include different variables, not considered here, on the effect of the sugar-sweetened beverage tax.</li>
+<li>Further studies should also be done about the possible existence of market power being held by the producers, which could lead to higher prices.</li>
+</ol>
+<p><strong><em>Overall the results I show here should not be taken should not be taken at face value. The objective of this project is to showcase, in a simplified manner, how a difference-in-difference model can be applied to study tax incidence. Further research should be done about the subject.</em></strong></p>
+<h2 id="appendix">Appendix</h2>
+<p>Eight different control variables were used in the extended model presented in Equation 2. The variables chosen as controls were: unemployment, average weekly earnings, WTI Oil prices, CAD/USD exchange rate, Stringency Index (SI), Economic Support Index (ESI) and the Geopolitical Risk Index. These control variables serve to mitigate potential confounding factors and account for external influences on beverage prices beyond the treatment effect of the tax. Unemployment and average weekly earnings reflect economic conditions and consumer purchasing power, while interest rates and oil prices capture broader macroeconomic trends that can affect production costs and inflationary pressures. Exchange rates can influence the competitiveness of Canadian products in the global market and the cost of imported goods and services. The SI and ESI were used to control the COVID-19 pandemic, which left lasting impacts on the global economy. The SI measures the strictness of the social distancing and lockdown measures, while the ESI measures the economic support measures adopted by the local government to mitigate the negative effects of the pandemic. The Geopolitical Risk Index is used to control for Geopolitical factors that affected markets worldwide, such as the Russian-Ukrainian invasion in 2022.</p>
+<p><strong>Figure 4</strong>: Monthly Unemployment Rate - Atlantic Provinces</p>
+<p><img src="./figures_did_sugar/unemployment_rate_Atlantic.png" alt="Monthly Unemployment Rate - Atlantic Provinces"></p>
+<p>Source: Statistics Canada. <a href="https://doi.org/10.25318/1410028701-eng">Table 14-10-0287-03 - Labour force characteristics by province, monthly, seasonally adjusted</a></p>
+<p><strong>Figure 5</strong>: Monthly Unemployment Rate - Prarie Provinces</p>
+<p><img src="./figures_did_sugar/unemployment_rate_Praries.png" alt="Monthly Unemployment Rate - Prarie Provinces"></p>
+<p>Source: Statistics Canada. <a href="https://doi.org/10.25318/1410028701-eng">Table 14-10-0287-03 - Labour force characteristics by province, monthly, seasonally adjusted</a></p>
+<p><strong>Figure 6</strong>: Monthly Unemployment Rate - Ontario, Quebéc and British Columbia</p>
+<p><img src="./figures_did_sugar/unemployment_rate_ON_QC_BC.png" alt="Monthly Unemployment Rate - Ontario, Quebéc and British Columbia"></p>
+<p>Source: Statistics Canada. <a href="https://doi.org/10.25318/1410028701-eng">Table 14-10-0287-03 - Labour force characteristics by province, monthly, seasonally adjusted</a></p>
+<p><strong>Figure 7</strong>: Average Weekly Earnings by Province</p>
+<p><img src="./figures_did_sugar/avg_week_earn.png" alt="Average Weekly Earnings by Province"></p>
+<p>Source: Statistics Canada. <a href="https://doi.org/10.25318/1410022301-eng">Table 14-10-0223-01 - Employment and average weekly earnings (including overtime) for all employees by province and territory, monthly, seasonally adjusted</a></p>
+<p><strong>Figure 8</strong>: Canadian Interest Rates</p>
+<p><img src="./figures_did_sugar/interest.png" alt="Canadian Interest Rates"></p>
+<p>Source: <a href="https://www.bankofcanada.ca/rates/interest-rates/canadian-interest-rates/">Bank of Canada. Canadian interest rates and monetary policy variables</a>.</p>
+<p><strong>Figure 9</strong>: WTI Oil Prices</p>
+<p><img src="./figures_did_sugar/WTI_Oil.png" alt="WTI Oil Prices"></p>
+<p>Source: <a href="https://www.worldbank.org/en/research/commodity-markets">World Bank. Commodity Prices - &quot;Pink Sheet&quot; Table. Monthly Prices.</a></p>
+<p><strong>Figure 10</strong>: CAD/USD Exchange Rate</p>
+<p><img src="./figures_did_sugar/CADUSD.png" alt="CAD/USD Exchange Rate"></p>
+<p>Source: <a href="https://ca.finance.yahoo.com/quote/CADUSD=X/">Yahoo Finance. CAD/USD (CADUSD=X)</a></p>
+<p><strong>Figure 11</strong>: Stringency Index (SI) - Atlantic Provinces</p>
+<p><img src="./figures_did_sugar/SI_Atlantic.png" alt="Stringency Index (SI) - Atlantic Provinces"></p>
+<p>Source: Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - &quot;Coronavirus Pandemic (COVID-19)&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a href="https://ourworldindata.org/coronavirus">https://ourworldindata.org/coronavirus</a>&#39;.</p>
+<p><strong>Figure 12</strong>: Stringency Index (SI) - Prarie Provinces</p>
+<p><img src="./figures_did_sugar/SI_Praries.png" alt="Stringency Index (SI) - Prarie Provinces"></p>
+<p>Source: Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - &quot;Coronavirus Pandemic (COVID-19)&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a href="https://ourworldindata.org/coronavirus">https://ourworldindata.org/coronavirus</a>&#39;.</p>
+<p><strong>Figure 13</strong>: Stringency Index (SI) - Ontario, Quebéc and British Columbia</p>
+<p><img src="./figures_did_sugar/SI_ON_QC_BC.png" alt="Stringency Index (SI) - Ontario, Quebéc and British Columbia"></p>
+<p>Source: Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - &quot;Coronavirus Pandemic (COVID-19)&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a href="https://ourworldindata.org/coronavirus">https://ourworldindata.org/coronavirus</a>&#39;.</p>
+<p><strong>Figure 14</strong>: Economic Support Index (ESI) - Atlantic Provinces</p>
+<p><img src="./figures_did_sugar/ESI_Atlantic.png" alt="Economic Support Index (ESI) - Atlantic Provinces"></p>
+<p>Source: Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - &quot;Coronavirus Pandemic (COVID-19)&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a href="https://ourworldindata.org/coronavirus">https://ourworldindata.org/coronavirus</a>&#39;.</p>
+<p><strong>Figure 15</strong>: Economic Support Index (ESI) - Prarie Provinces</p>
+<p><img src="./figures_did_sugar/ESI_Praries.png" alt="Economic Support Index (ESI) - Prarie Provinces"></p>
+<p>Source: Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - &quot;Coronavirus Pandemic (COVID-19)&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a href="https://ourworldindata.org/coronavirus">https://ourworldindata.org/coronavirus</a>&#39;.</p>
+<p><strong>Figure 16</strong>: Stringency Index (SI) - Ontario, Quebéc and British Columbia</p>
+<p><img src="./figures_did_sugar/ESI_ON_QC_BC.png" alt="Economic Support Index (ESI) - Ontario, Quebéc and British Columbia"></p>
+<p>Source: Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao, Cameron Appel, Charlie Giattino, Joe Hasell, Bobbie Macdonald, Saloni Dattani, Diana Beltekian, Esteban Ortiz-Ospina and Max Roser (2020) - &quot;Coronavirus Pandemic (COVID-19)&quot;. Published online at OurWorldInData.org. Retrieved from: &#39;<a href="https://ourworldindata.org/coronavirus">https://ourworldindata.org/coronavirus</a>&#39;.</p>
+<p><strong>Figure 17</strong>: Geopolitical Risk Index (GPR)</p>
+<p><img src="./figures_did_sugar/GPR.png" alt="Geopolitical Risk Index (GPR)"></p>
+<p>Source: <a href="https://www.matteoiacoviello.com/gpr.htm">Caldara, Dario and Matteo Iacoviello (2022), “Measuring Geopolitical Risk,” American Economic Review, April, 112(4), pp.1194-1225.</a></p>
+	
+									        </div>
+									    </div>
+									</div>
+
+
+									<div class="panel panel-default">
+									    <div class="panel-heading" role="tab" id="headingSix">
+									        <h4 class="panel-title">
+									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Project 3 - Exams Project
+									            </a>
+									        </h4>
+									    </div>
+									    <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
 									         <div class="panel-body">
 									            <h2 class="colorlib-heading" id="-project-3-exams-project-https-github-com-mgbs98-exams-project-"><a href="https://github.com/mgbs98/exams-project">Project 3 - Exams Project</a></h2>
 
